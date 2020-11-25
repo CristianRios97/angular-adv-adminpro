@@ -8,6 +8,7 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { AuthGuard } from '../guards/auth.guard';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 
@@ -24,6 +25,8 @@ const routes: Routes = [
       { path: 'promesas', component: PromesasComponent, data: {titulo: 'Promesas'} },
       { path: 'account-settings', component: AccountSettingsComponent, data: {titulo: 'Ajustes de cuenta'} },
       { path: 'rxjs', component: RxjsComponent, data: {titulo: 'Observable RxJS'} },
+      { path: 'perfil', component: PerfilComponent, data: {titulo: 'Perfil de usuario'} },
+
 
     ]
   },

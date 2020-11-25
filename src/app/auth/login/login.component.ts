@@ -4,7 +4,7 @@ import { Component, NgZone, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
 import { UsuarioService } from '../../services/usuario.service';
-import { runInThisContext } from 'vm';
+
 
 declare const gapi: any;
 
@@ -63,11 +63,11 @@ export class LoginComponent implements OnInit {
 
   renderButton() {
       gapi.signin2.render('my-signin2', {
-      'scope': 'profile email',
-      'width': 240,
-      'height': 50,
-      'longtitle': true,
-      'theme': 'dark',
+      ' scope ': 'profile email',
+      ' width ': 240,
+      ' height ': 50,
+      ' longtitle ': true,
+      ' theme ': 'dark',
 
     });
 
